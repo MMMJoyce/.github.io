@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical VA Lead Form - Professional Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Professional Details</h1>
+        <form id="form2" action="page3.html">
+            <div class="form-group">
+                <label for="job-title">Current Job Title</label>
+                <input type="text" id="job-title" name="job-title">
+            </div>
+            <div class="form-group">
+                <label for="experience">Years of Experience</label>
+                <select id="experience" name="experience">
+                    <option value="1">1 year</option>
+                    <option value="2">2 years</option>
+                    <option value="3">3 years</option>
+                    <option value="4">4 years</option>
+                    <option value="5">5+ years</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="industry">Industry</label>
+                <select id="industry" name="industry">
+                    <option value="healthcare">Healthcare</option>
+                    <option value="it">IT</option>
+                    <option value="finance">Finance</option>
+                    <option value="education">Education</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <button type="button" class="btn" onclick="goBack()">Back</button>
+            <button type="submit" class="btn">Next</button>
+        </form>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

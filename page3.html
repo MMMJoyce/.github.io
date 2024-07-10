@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical VA Lead Form - Skills Checklist</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Skills Checklist</h1>
+        <form id="form3" action="page4.html">
+            <p>Select the skills required for your VA. You can also upload a job description for us to parse or provide a verbal description.</p>
+            <div class="form-group">
+                <label><input type="checkbox" name="skills" value="medical-coding"> Medical Coding</label>
+                <label><input type="checkbox" name="skills" value="medical-billing"> Medical Billing</label>
+                <label><input type="checkbox" name="skills" value="patient-scheduling"> Patient Scheduling</label>
+                <label><input type="checkbox" name="skills" value="emr-management"> EMR Management</label>
+                <label><input type="checkbox" name="skills" value="medical-transcription"> Medical Transcription</label>
+                <label><input type="checkbox" name="skills" value="data-entry"> Data Entry</label>
+                <label><input type="checkbox" name="skills" value="appointment-scheduling"> Appointment Scheduling</label>
+                <label><input type="checkbox" name="skills" value="email-management"> Email Management</label>
+                <label><input type="checkbox" name="skills" value="phone-support"> Phone Support</label>
+                <label><input type="checkbox" name="skills" value="calendar-management"> Calendar Management</label>
+                <label><input type="checkbox" name="skills" value="crm-management"> CRM Management</label>
+                <label><input type="checkbox" name="skills" value="it-support"> IT Support</label>
+                <label><input type="checkbox" name="skills" value="data-analysis"> Data Analysis</label>
+                <label><input type="checkbox" name="skills" value="software-troubleshooting"> Software Troubleshooting</label>
+            </div>
+            <div class="form-group">
+                <label for="job-description">Upload Job Description</label>
+                <input type="file" id="job-description" name="job-description">
+            </div>
+            <div class="form-group">
+                <label for="verbal-description">Provide Verbal Description</label>
+                <button id="verbal-description">Start Voice Input</button>
+            </div>
+            <div class="form-group">
+                <label for="tasks">Specific Tasks Needed</label>
+                <textarea id="tasks" name="tasks"></textarea>
+            </div>
+            <button type="button" class="btn" onclick="goBack()">Back</button>
+            <button type="submit" class="btn">Next</button>
+        </form>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
